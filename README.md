@@ -6,10 +6,11 @@ Generación de reportes automáticos de predios que cruzan espacialmente con Det
 Instalar python
 `Python`
 
-Instalar los paquetes requeridos ejecutando en consola:
+En consola ubicarse en la dirección donde se descargo este repositorio y ejecutar:
 ```
 pip install -r requirements.txt
 ```
+para instalar los paquetes requeridos
 ### __Crear estructura de carpetas y archivos de insumo__
 
 ![Estructura Carpetas](/assets/Estructura_Carpetas.jpg)
@@ -41,7 +42,7 @@ pip install -r requirements.txt
 Editar columna <`Nombre`> con la ruta de la carpeta y nombres de los archivos descritos en el anterior paso
 
 ### __Ejecutar la aplicación con:__
-En consola ubicarse en la dirección donde descargo este repositorio y ejecutar:
+En consola ubicarse en la dirección donde se descargo este repositorio y ejecutar:
 ``` 
 python reportes.py 
 ```
