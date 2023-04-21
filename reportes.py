@@ -186,8 +186,7 @@ print("\n#### ------  Textos Automáticos Determinantes - Usos - UAF ------ ####
         
 exec_time = datetime.now() - start
 exec_time = str(exec_time).split(":")     
-print('\n## -->  <--##')
-print(f'## --> FINALIZADO: Tiempo de ejecución: {exec_time[0]}h {exec_time[1]}m {int(float(exec_time[2]))}s')
+print(f'\n## --> FINALIZADO: Tiempo de ejecución: {exec_time[0]}h {exec_time[1]}m {int(float(exec_time[2]))}s')
 print("\n      ---------------------")
 print("      |-    By: ljimj    -|")
 print("      ---------------------")

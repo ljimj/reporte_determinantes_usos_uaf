@@ -56,8 +56,11 @@ def text_determinantes_predio(gdf_resti, gdf_condi, gdf_otros, fuente):
             text_determinantes += "\nEl predio objeto de estudio, se encuentra en una zona que presenta EROSIÓN MODERADA, según fuente Plan básico de Ordenamiento Territorial de Pradera Acuerdo No. 019 (31 diciembre del 2002). Mapa: Erosión Fuente Temática: PBOT Pradera 2002.\n"
         elif ('EROSIÓN LIGERA - PBOT' in text_determinantes):
             text_determinantes += "\nEl predio objeto de estudio, se encuentra en una zona que presenta EROSIÓN LIGERA, según fuente Plan básico de Ordenamiento Territorial de Pradera Acuerdo No. 019 (31 diciembre del 2002). Mapa: Erosión Fuente Temática: PBOT Pradera 2002.\n"
+    
+    else:
+        text_determinantes += "Que una vez realizados los cruces cartográficos entre la información de restricciones y condicionantes entregada por la ANT y la obtenida durante la operación del BPM se evidenció que el caso objeto de estudio no cuenta con ningún determinante o condicionante que limiten la implementación del POSPR en el municipio de Pradera-Valle del Cauca."
 
-        # Fuente versión de la capas geoproceso
-        text_determinantes += f"\nFuente: Capa Cruces Geoproceso entregado por SSIT {fuente}"
+    # Fuente versión de la capas geoproceso
+    text_determinantes += f"\nFuente: Capa Cruces Geoproceso entregado por SSIT {fuente}"
 
     return text_determinantes
