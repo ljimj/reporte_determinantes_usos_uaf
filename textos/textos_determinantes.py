@@ -25,7 +25,7 @@ def text_determinantes_tipo(gdf, tipo):
             area = round(area,2) # area intercept
             percent = round(percent,2)
             ha = int(area) #Hectareas sin decimales
-            m2 = round(area - ha*10000,2) # metros cuadrados
+            m2 = round((area - ha)*10000,2) # metros cuadrados
             text += f"- {tipo}: {capa} en {ha} Ha {m2} m2 ({percent}%)\n"
 
     return text
