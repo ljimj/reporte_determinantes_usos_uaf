@@ -22,7 +22,7 @@ def text_determinantes_tipo(gdf, tipo):
             capa = row.CAPA_GEO
             area = row.AREA_CRUCE
             percent = row.PORCENTAJE
-            area = round(area,2) # area intercept
+            # area = round(area,2) # area intercept
             percent = round(percent,2)
             ha = int(area) #Hectareas sin decimales
             m2 = round((area - ha)*10000,2) # metros cuadrados
