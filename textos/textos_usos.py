@@ -45,8 +45,8 @@ def texto_area_actividad(gdf_inter_area_activ):
             percent = round(row.porcentaje,2)
 
         area = row.area_intercept
-        Ha = int(area/10000) #Hectareas sin decimales
-        m2 = round(area - Ha*10000,2) # metros cuadrados
+        Ha = str(int(area/10000)) #Hectareas sin decimales
+        m2 = str(round(area - Ha*10000,2)) # metros cuadrados
         if(i != len_gdf and i != 1):
             #Proyectos Productivos en XX Ha (XX%) y XXXX en XX Ha y XX M2 (XX%),
             text_uso += ", {} en {} Ha {} m2 ({}%)".format(areaAct, Ha, m2, percent)
@@ -80,8 +80,8 @@ def texto_uso_actual(gdf_inter_uso_actual):
         else:
             percent = round(row.porcentaje,2)
         area = row.area_intercept
-        Ha = int(area/10000) #Hectareas sin decimales
-        m2 = round(area - Ha*10000,2) # metros cuadrados
+        Ha = str(int(area/10000)) #Hectareas sin decimales
+        m2 = str(round(area - Ha*10000,2)) # metros cuadrados
         if(i != len_gdf and i != 1):
             #con un uso actual de Rastrojo en XX Ha y XX M2 (XX%) y de Café en XX Ha y XX M2 (XX%)
             text_uso += ", ({}) {} en {} Ha {} m2 ({}%)".format(row.USO, uso, Ha, m2, percent)
@@ -116,8 +116,8 @@ def texto_uso_potencial(gdf_inter_uso_potencial):
         else:
             percent = round(row.porcentaje,2)
         area = row.area_intercept
-        Ha = int(area/10000) #Hectareas sin decimales
-        m2 = round(area - Ha*10000,2) # metros cuadrados
+        Ha = str(int(area/10000)) #Hectareas sin decimales
+        m2 = str(round(area - Ha*10000,2)) # metros cuadrados
         if(i != len_gdf and i != 1):
             #un uso potencial de tierras forestales en XX Ha y XX M2 y de Tierras Cultivables en XX Ha y XX M2 (XX%)
             text_uso += ", ({}) {} en {} Ha {} m2 ({}%)".format(row.USO, uso, Ha, m2, percent)

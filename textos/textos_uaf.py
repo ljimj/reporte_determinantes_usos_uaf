@@ -28,8 +28,8 @@ def text_uaf_predio (gdf_inter_uaf):
             uaf_max = row.UNIDAD_AGRICOLA_FAMILIAR_MAXIMA
             range_uaf = row.UNIDAD_AGRICOLA_FAMILIAR
             area = row.area_intercept
-            Ha = int(area/10000) #Hectareas sin decimales
-            m2 = round(area - Ha*10000,2) # metros cuadrados
+            Ha = str(int(area/10000)) #Hectareas sin decimales
+            m2 = str(round(area - Ha*10000,2)) # metros cuadrados
             if(round(row.porcentaje,2) > 99.9):
                 percent = 100.00
             else:
